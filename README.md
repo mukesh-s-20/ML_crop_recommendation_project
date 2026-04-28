@@ -139,4 +139,3 @@ The Flask web app has 4 pages:
 
 ---
 
-*Final Year B.Tech / MCA Project – Machine Learning & Deep Learning*
