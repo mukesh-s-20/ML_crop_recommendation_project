@@ -1,0 +1,729 @@
+Antecedent,Consequent,Support,Confidence,Lift
+CROP_ChickPea,"Humidity_Low, Potassium_High",0.0455,1.0,22.0
+"Humidity_Low, Potassium_High",CROP_ChickPea,0.0455,1.0,22.0
+"Nitrogen_High, Phosphorus_High",CROP_Banana,0.0455,0.9174,20.1835
+CROP_Banana,"Nitrogen_High, Phosphorus_High",0.0455,1.0,20.1835
+"Phosphorus_Low, Potassium_Low",CROP_Orange,0.0455,0.7143,15.7143
+CROP_Orange,"Phosphorus_Low, Potassium_Low",0.0455,1.0,15.7143
+"Humidity_High, Phosphorus_High",CROP_Apple,0.0455,0.6623,14.5695
+CROP_Apple,"Humidity_High, Phosphorus_High",0.0455,1.0,14.5695
+"Humidity_High, Potassium_Low",CROP_Orange,0.0455,0.641,14.1026
+CROP_Orange,"Humidity_High, Potassium_Low",0.0455,1.0,14.1026
+"Nitrogen_High, Temperature_High",CROP_Muskmelon,0.04,0.55,12.1
+CROP_Muskmelon,"Nitrogen_High, Temperature_High",0.04,0.88,12.1
+CROP_Mango,"Humidity_Low, Phosphorus_Low",0.0414,0.91,11.5057
+"Humidity_Low, Phosphorus_Low",CROP_Mango,0.0414,0.523,11.5057
+"Humidity_High, Nitrogen_High",CROP_Muskmelon,0.0455,0.5208,11.4583
+CROP_Muskmelon,"Humidity_High, Nitrogen_High",0.0455,1.0,11.4583
+CROP_Mango,"Potassium_Med, Rainfall_Med",0.0455,1.0,10.7843
+CROP_Watermelon,"Phosphorus_Low, Potassium_High",0.0455,1.0,10.4265
+CROP_Muskmelon,"Phosphorus_Low, Potassium_High",0.0455,1.0,10.4265
+CROP_Watermelon,"Potassium_High, Temperature_Med",0.0455,1.0,10.3286
+CROP_Mango,"Potassium_Med, Temperature_High",0.0427,0.94,10.2376
+CROP_Coconut,"Humidity_High, Potassium_Med",0.0455,1.0,9.8214
+CROP_Mango,"Rainfall_Med, Temperature_High",0.0427,0.94,9.7089
+CROP_Watermelon,"Phosphorus_Low, Rainfall_Low",0.0455,1.0,9.4421
+CROP_Muskmelon,"Phosphorus_Low, Rainfall_Low",0.0455,1.0,9.4421
+CROP_Muskmelon,"Humidity_High, Rainfall_Low",0.0455,1.0,9.4017
+CROP_Rice,"Humidity_Med, Rainfall_High",0.0436,0.96,9.0644
+CROP_Rice,"Humidity_Med, Potassium_Med",0.0409,0.9,9.0411
+CROP_Watermelon,"Nitrogen_High, Rainfall_Low",0.0455,1.0,8.9431
+CROP_Muskmelon,"Nitrogen_High, Rainfall_Low",0.0455,1.0,8.9431
+CROP_Pomegranate,"Humidity_High, Potassium_Med",0.0414,0.91,8.9375
+CROP_Mango,"Humidity_Low, Potassium_Med",0.0455,1.0,8.7649
+CROP_Apple,"Humidity_High, Temperature_Low",0.0414,0.91,8.7424
+CROP_Watermelon,"Rainfall_Low, Temperature_Med",0.0455,1.0,8.7302
+CROP_MothBeans,"Humidity_Low, Rainfall_Low",0.0414,0.91,8.7043
+CROP_Grapes,"Humidity_Med, Potassium_High",0.0455,1.0,8.5938
+CROP_Mango,"Phosphorus_Low, Rainfall_Med",0.0414,0.91,8.5556
+CROP_ChickPea,"Potassium_High, Temperature_Low",0.0455,1.0,8.5271
+CROP_Banana,"Humidity_Med, Potassium_High",0.0436,0.96,8.25
+CROP_MothBeans,"Humidity_Low, Phosphorus_Med",0.0405,0.89,8.1925
+CROP_Coffee,"Nitrogen_High, Potassium_Med",0.0455,1.0,8.1181
+CROP_Grapes,"Humidity_Med, Phosphorus_High",0.0455,1.0,7.9137
+CROP_Coconut,"Phosphorus_Low, Rainfall_High",0.0455,1.0,7.8014
+CROP_Apple,"Potassium_High, Temperature_Low",0.0414,0.91,7.7597
+CROP_Jute,"Phosphorus_Med, Rainfall_High",0.0414,0.91,7.7597
+CROP_Mango,"Humidity_Low, Temperature_High",0.0427,0.94,7.6593
+CROP_Muskmelon,"Potassium_High, Temperature_High",0.04,0.88,7.6522
+CROP_Banana,"Humidity_Med, Phosphorus_High",0.0436,0.96,7.5971
+CROP_ChickPea,"Humidity_Low, Temperature_Low",0.0455,1.0,7.5862
+CROP_Coffee,"Nitrogen_High, Rainfall_High",0.0455,1.0,7.4576
+CROP_Watermelon,"Potassium_High, Rainfall_Low",0.0455,1.0,7.3826
+CROP_Muskmelon,"Potassium_High, Rainfall_Low",0.0455,1.0,7.3826
+CROP_Mango,"Humidity_Low, Rainfall_Med",0.0455,1.0,7.309
+CROP_Watermelon,"Phosphorus_Low, Temperature_Med",0.0455,1.0,7.2368
+CROP_KidneyBeans,"Humidity_Low, pH_Value_Low",0.0455,1.0,7.0968
+CROP_Coconut,"Humidity_High, Rainfall_High",0.0455,1.0,6.875
+CROP_Muskmelon,"Phosphorus_Low, Temperature_High",0.04,0.88,6.841
+CROP_Watermelon,"Nitrogen_High, Phosphorus_Low",0.0455,1.0,6.7692
+CROP_Muskmelon,"Nitrogen_High, Phosphorus_Low",0.0455,1.0,6.7692
+CROP_Banana,"Nitrogen_High, Potassium_High",0.0455,1.0,6.7692
+CROP_Watermelon,"Nitrogen_High, Potassium_High",0.0455,1.0,6.7692
+CROP_Muskmelon,"Nitrogen_High, Potassium_High",0.0455,1.0,6.7692
+CROP_KidneyBeans,"Humidity_Low, Temperature_Low",0.0405,0.89,6.7517
+CROP_KidneyBeans,"Temperature_Low, pH_Value_Low",0.0405,0.89,6.6826
+CROP_Muskmelon,"Humidity_High, Temperature_High",0.04,0.88,6.4106
+CROP_Muskmelon,"Humidity_High, Potassium_High",0.0455,1.0,5.9783
+CROP_Apple,"Humidity_High, Potassium_High",0.0455,1.0,5.9783
+CROP_Papaya,"Humidity_High, Potassium_High",0.0455,1.0,5.9783
+CROP_Apple,"Phosphorus_High, Temperature_Low",0.0414,0.91,5.8367
+CROP_Muskmelon,"Rainfall_Low, Temperature_High",0.04,0.88,5.5954
+CROP_Coconut,"Phosphorus_Low, Potassium_Med",0.0455,1.0,5.5276
+CROP_Lentil,"Potassium_Low, Rainfall_Low",0.0409,0.9,5.4247
+CROP_Watermelon,"Nitrogen_High, Temperature_Med",0.0455,1.0,5.2506
+CROP_Grapes,"Phosphorus_High, Potassium_High",0.0455,1.0,5.1887
+CROP_Banana,"Phosphorus_High, Potassium_High",0.0455,1.0,5.1887
+CROP_Apple,"Phosphorus_High, Potassium_High",0.0455,1.0,5.1887
+CROP_Coffee,"Potassium_Med, Rainfall_High",0.0455,1.0,5.1522
+CROP_Coconut,"Potassium_Med, Rainfall_High",0.0455,1.0,5.1522
+CROP_Mango,"Phosphorus_Low, Potassium_Med",0.0414,0.91,5.0302
+CROP_Pomegranate,"Phosphorus_Low, Potassium_Med",0.0414,0.91,5.0302
+CROP_Cotton,"Humidity_Med, Nitrogen_High",0.0441,0.97,4.8721
+CROP_Rice,"Potassium_Med, Rainfall_High",0.0427,0.94,4.8431
+CROP_Banana,"Humidity_Med, Nitrogen_High",0.0436,0.96,4.8219
+CROP_Orange,"Humidity_High, Phosphorus_Low",0.0455,1.0,4.721
+CROP_Coconut,"Humidity_High, Phosphorus_Low",0.0455,1.0,4.721
+CROP_Pomegranate,"Humidity_High, Phosphorus_Low",0.0455,1.0,4.721
+CROP_Muskmelon,"Humidity_High, Phosphorus_Low",0.0455,1.0,4.721
+CROP_Jute,"Potassium_Med, Rainfall_High",0.0414,0.91,4.6885
+CROP_Coconut,Potassium_Med,0.0455,1.0,3.17
+"CROP_Coconut, Humidity_High",Potassium_Med,0.0455,1.0,3.17
+"CROP_Mango, Phosphorus_Low",Potassium_Med,0.0414,1.0,3.17
+"CROP_Mango, Rainfall_Med",Potassium_Med,0.0455,1.0,3.17
+"CROP_Coffee, Nitrogen_High",Potassium_Med,0.0455,1.0,3.17
+"CROP_Coconut, Phosphorus_Low",Potassium_Med,0.0455,1.0,3.17
+"CROP_Mango, Humidity_Low",Potassium_Med,0.0455,1.0,3.17
+"CROP_Coconut, Rainfall_High",Potassium_Med,0.0455,1.0,3.17
+"CROP_Mango, Temperature_High",Potassium_Med,0.0427,1.0,3.17
+CROP_Coffee,Potassium_Med,0.0455,1.0,3.17
+CROP_Mango,Potassium_Med,0.0455,1.0,3.17
+"CROP_Coffee, Rainfall_High",Potassium_Med,0.0455,1.0,3.17
+"CROP_Banana, Phosphorus_High",Potassium_High,0.0455,1.0,3.0387
+CROP_Apple,Potassium_High,0.0455,1.0,3.0387
+"CROP_Watermelon, Temperature_Med",Potassium_High,0.0455,1.0,3.0387
+"CROP_Watermelon, Nitrogen_High",Potassium_High,0.0455,1.0,3.0387
+CROP_Grapes,Potassium_High,0.0455,1.0,3.0387
+CROP_ChickPea,Potassium_High,0.0455,1.0,3.0387
+"CROP_Banana, Humidity_Med",Potassium_High,0.0436,1.0,3.0387
+"CROP_Muskmelon, Nitrogen_High",Potassium_High,0.0455,1.0,3.0387
+CROP_Papaya,Potassium_High,0.0455,1.0,3.0387
+"CROP_ChickPea, Temperature_Low",Potassium_High,0.0455,1.0,3.0387
+"CROP_Watermelon, Rainfall_Low",Potassium_High,0.0455,1.0,3.0387
+CROP_Banana,Potassium_High,0.0455,1.0,3.0387
+CROP_Muskmelon,Potassium_High,0.0455,1.0,3.0387
+CROP_Watermelon,Potassium_High,0.0455,1.0,3.0387
+"CROP_Apple, Humidity_High",Potassium_High,0.0455,1.0,3.0387
+"CROP_Grapes, Phosphorus_High",Potassium_High,0.0455,1.0,3.0387
+"CROP_Banana, Nitrogen_High",Potassium_High,0.0455,1.0,3.0387
+"CROP_Muskmelon, Temperature_High",Potassium_High,0.04,1.0,3.0387
+"CROP_Apple, Temperature_Low",Potassium_High,0.0414,1.0,3.0387
+"CROP_Muskmelon, Phosphorus_Low",Potassium_High,0.0455,1.0,3.0387
+"CROP_Muskmelon, Rainfall_Low",Potassium_High,0.0455,1.0,3.0387
+"Nitrogen_High, Phosphorus_High",Potassium_High,0.0495,1.0,3.0387
+"CROP_Muskmelon, Humidity_High",Potassium_High,0.0455,1.0,3.0387
+"CROP_Watermelon, Phosphorus_Low",Potassium_High,0.0455,1.0,3.0387
+"Humidity_High, Phosphorus_High",Potassium_High,0.0686,1.0,3.0387
+"CROP_Apple, Phosphorus_High",Potassium_High,0.0455,1.0,3.0387
+"CROP_ChickPea, Humidity_Low",Potassium_High,0.0455,1.0,3.0387
+"CROP_Papaya, Humidity_High",Potassium_High,0.0455,1.0,3.0387
+"CROP_Grapes, Humidity_Med",Potassium_High,0.0455,1.0,3.0387
+CROP_KidneyBeans,Humidity_Low,0.0455,1.0,3.0303
+CROP_MungBean,Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Lentil, Potassium_Low",Rainfall_Low,0.0409,1.0,3.0303
+"CROP_ChickPea, Potassium_High",Temperature_Low,0.0455,1.0,3.0303
+"CROP_Watermelon, Potassium_High",Rainfall_Low,0.0455,1.0,3.0303
+CROP_Watermelon,Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Muskmelon, Temperature_High",Rainfall_Low,0.04,1.0,3.0303
+"Humidity_Low, Potassium_High",Temperature_Low,0.0455,1.0,3.0303
+CROP_ChickPea,Temperature_Low,0.0455,1.0,3.0303
+CROP_Grapes,Humidity_Med,0.0455,1.0,3.0303
+"CROP_MothBeans, Rainfall_Low",Humidity_Low,0.0414,1.0,3.0303
+"CROP_Mango, Phosphorus_Low",Humidity_Low,0.0414,1.0,3.0303
+CROP_Mango,Rainfall_Med,0.0455,1.0,3.0303
+CROP_KidneyBeans,pH_Value_Low,0.0455,1.0,3.0303
+CROP_Muskmelon,Rainfall_Low,0.0455,1.0,3.0303
+CROP_Watermelon,Temperature_Med,0.0455,1.0,3.0303
+CROP_MothBeans,Humidity_Low,0.0455,1.0,3.0303
+CROP_Mango,Humidity_Low,0.0455,1.0,3.0303
+"CROP_KidneyBeans, Temperature_Low",pH_Value_Low,0.0405,1.0,3.0303
+"CROP_Grapes, Phosphorus_High",Humidity_Med,0.0455,1.0,3.0303
+"CROP_Mango, Humidity_Low",Rainfall_Med,0.0455,1.0,3.0303
+"CROP_Mango, Rainfall_Med",Humidity_Low,0.0455,1.0,3.0303
+"CROP_Grapes, Potassium_High",Humidity_Med,0.0455,1.0,3.0303
+"CROP_Muskmelon, Nitrogen_High",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_MothBeans, Phosphorus_Med",Humidity_Low,0.0405,1.0,3.0303
+"CROP_Watermelon, Phosphorus_Low",Temperature_Med,0.0455,1.0,3.0303
+CROP_ChickPea,Humidity_Low,0.0455,1.0,3.0303
+CROP_Lentil,Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Watermelon, Potassium_High",Temperature_Med,0.0455,1.0,3.0303
+"CROP_ChickPea, Temperature_Low",Humidity_Low,0.0455,1.0,3.0303
+"CROP_ChickPea, Humidity_Low",Temperature_Low,0.0455,1.0,3.0303
+"CROP_Muskmelon, Phosphorus_Low",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Watermelon, Nitrogen_High",Temperature_Med,0.0455,1.0,3.0303
+"CROP_ChickPea, Potassium_High",Humidity_Low,0.0455,1.0,3.0303
+"CROP_Watermelon, Phosphorus_Low",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Mango, Phosphorus_Low",Rainfall_Med,0.0414,1.0,3.0303
+"CROP_Watermelon, Temperature_Med",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_KidneyBeans, Humidity_Low",pH_Value_Low,0.0455,1.0,3.0303
+"CROP_KidneyBeans, pH_Value_Low",Humidity_Low,0.0455,1.0,3.0303
+"CROP_Watermelon, Nitrogen_High",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Mango, Temperature_High",Humidity_Low,0.0427,1.0,3.0303
+"CROP_Muskmelon, Humidity_High",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Muskmelon, Potassium_High",Rainfall_Low,0.0455,1.0,3.0303
+"CROP_Watermelon, Rainfall_Low",Temperature_Med,0.0455,1.0,3.0303
+"CROP_Mango, Potassium_Med",Humidity_Low,0.0455,1.0,3.0303
+"CROP_Mango, Temperature_High",Rainfall_Med,0.0427,1.0,3.0303
+"CROP_Mango, Potassium_Med",Rainfall_Med,0.0455,1.0,3.0303
+"CROP_KidneyBeans, Temperature_Low",Humidity_Low,0.0405,1.0,3.0303
+CROP_Rice,Potassium_Med,0.0427,0.94,2.9798
+"CROP_Rice, Rainfall_High",Potassium_Med,0.0427,0.94,2.9798
+"CROP_Rice, Humidity_Med",Potassium_Med,0.0409,0.9375,2.9719
+"CROP_Banana, Humidity_Med",Phosphorus_High,0.0436,1.0,2.965
+"CROP_Banana, Nitrogen_High",Phosphorus_High,0.0455,1.0,2.965
+CROP_Grapes,Phosphorus_High,0.0455,1.0,2.965
+CROP_Banana,Phosphorus_High,0.0455,1.0,2.965
+"CROP_Banana, Potassium_High",Phosphorus_High,0.0455,1.0,2.965
+"CROP_Apple, Temperature_Low",Phosphorus_High,0.0414,1.0,2.965
+"CROP_Apple, Humidity_High",Phosphorus_High,0.0455,1.0,2.965
+"CROP_Grapes, Humidity_Med",Phosphorus_High,0.0455,1.0,2.965
+"CROP_Grapes, Potassium_High",Phosphorus_High,0.0455,1.0,2.965
+CROP_Apple,Phosphorus_High,0.0455,1.0,2.965
+"CROP_Apple, Potassium_High",Phosphorus_High,0.0455,1.0,2.965
+"CROP_Muskmelon, Humidity_High",Nitrogen_High,0.0455,1.0,2.953
+CROP_Coffee,Nitrogen_High,0.0455,1.0,2.953
+"CROP_Watermelon, Rainfall_Low",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Muskmelon, Phosphorus_Low",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Banana, Potassium_High",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Banana, Phosphorus_High",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Watermelon, Temperature_Med",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Muskmelon, Potassium_High",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Watermelon, Potassium_High",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Banana, Humidity_Med",Nitrogen_High,0.0436,1.0,2.953
+CROP_Watermelon,Nitrogen_High,0.0455,1.0,2.953
+CROP_Muskmelon,Nitrogen_High,0.0455,1.0,2.953
+"CROP_Coffee, Potassium_Med",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Muskmelon, Temperature_High",Nitrogen_High,0.04,1.0,2.953
+"CROP_Watermelon, Phosphorus_Low",Nitrogen_High,0.0455,1.0,2.953
+CROP_Banana,Nitrogen_High,0.0455,1.0,2.953
+"CROP_Muskmelon, Rainfall_Low",Nitrogen_High,0.0455,1.0,2.953
+"CROP_Cotton, Humidity_Med",Nitrogen_High,0.0441,1.0,2.953
+"CROP_Coffee, Rainfall_High",Nitrogen_High,0.0455,1.0,2.953
+CROP_Cotton,Nitrogen_High,0.0455,1.0,2.953
+"CROP_Papaya, Potassium_High",Humidity_High,0.0455,1.0,2.9412
+"CROP_Rice, Humidity_Med",Rainfall_High,0.0436,1.0,2.9412
+CROP_Papaya,Humidity_High,0.0455,1.0,2.9412
+CROP_Pomegranate,Humidity_High,0.0455,1.0,2.9412
+"CROP_Apple, Potassium_High",Humidity_High,0.0455,1.0,2.9412
+"CROP_Coconut, Phosphorus_Low",Humidity_High,0.0455,1.0,2.9412
+"CROP_Orange, Phosphorus_Low",Humidity_High,0.0455,1.0,2.9412
+CROP_Muskmelon,Humidity_High,0.0455,1.0,2.9412
+"CROP_Coffee, Nitrogen_High",Rainfall_High,0.0455,1.0,2.9412
+"CROP_Pomegranate, Potassium_Med",Humidity_High,0.0414,1.0,2.9412
+"CROP_Coffee, Potassium_Med",Rainfall_High,0.0455,1.0,2.9412
+CROP_Apple,Humidity_High,0.0455,1.0,2.9412
+CROP_Coffee,Rainfall_High,0.0455,1.0,2.9412
+CROP_Coconut,Rainfall_High,0.0455,1.0,2.9412
+"CROP_Coconut, Potassium_Med",Humidity_High,0.0455,1.0,2.9412
+CROP_Orange,Humidity_High,0.0455,1.0,2.9412
+"CROP_Rice, Potassium_Med",Rainfall_High,0.0427,1.0,2.9412
+"CROP_Muskmelon, Potassium_High",Humidity_High,0.0455,1.0,2.9412
+"CROP_Apple, Phosphorus_High",Humidity_High,0.0455,1.0,2.9412
+"CROP_Coconut, Rainfall_High",Humidity_High,0.0455,1.0,2.9412
+"CROP_Orange, Potassium_Low",Humidity_High,0.0455,1.0,2.9412
+"CROP_Jute, Phosphorus_Med",Rainfall_High,0.0414,1.0,2.9412
+"CROP_Pomegranate, Phosphorus_Low",Humidity_High,0.0455,1.0,2.9412
+"CROP_Coconut, Phosphorus_Low",Rainfall_High,0.0455,1.0,2.9412
+"CROP_Coconut, Potassium_Med",Rainfall_High,0.0455,1.0,2.9412
+"CROP_Muskmelon, Phosphorus_Low",Humidity_High,0.0455,1.0,2.9412
+"CROP_Apple, Temperature_Low",Humidity_High,0.0414,1.0,2.9412
+CROP_Coconut,Humidity_High,0.0455,1.0,2.9412
+CROP_Jute,Rainfall_High,0.0455,1.0,2.9412
+"CROP_Jute, Potassium_Med",Rainfall_High,0.0414,1.0,2.9412
+"CROP_Coconut, Humidity_High",Rainfall_High,0.0455,1.0,2.9412
+"CROP_Muskmelon, Rainfall_Low",Humidity_High,0.0455,1.0,2.9412
+"CROP_Muskmelon, Nitrogen_High",Humidity_High,0.0455,1.0,2.9412
+"CROP_Muskmelon, Temperature_High",Humidity_High,0.04,1.0,2.9412
+CROP_Rice,Rainfall_High,0.0455,1.0,2.9412
+CROP_Cotton,Humidity_Med,0.0441,0.97,2.9394
+"CROP_Cotton, Nitrogen_High",Humidity_Med,0.0441,0.97,2.9394
+"CROP_Watermelon, Rainfall_Low",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Coconut, Rainfall_High",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Coconut, Humidity_High",Phosphorus_Low,0.0455,1.0,2.9372
+CROP_Coconut,Phosphorus_Low,0.0455,1.0,2.9372
+CROP_Pomegranate,Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Orange, Humidity_High",Phosphorus_Low,0.0455,1.0,2.9372
+CROP_Watermelon,Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Coconut, Potassium_Med",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Muskmelon, Potassium_High",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Muskmelon, Rainfall_Low",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Watermelon, Nitrogen_High",Phosphorus_Low,0.0455,1.0,2.9372
+CROP_Muskmelon,Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Muskmelon, Temperature_High",Phosphorus_Low,0.04,1.0,2.9372
+"CROP_Watermelon, Temperature_Med",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Muskmelon, Nitrogen_High",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Orange, Potassium_Low",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Pomegranate, Potassium_Med",Phosphorus_Low,0.0414,1.0,2.9372
+"CROP_Pomegranate, Humidity_High",Phosphorus_Low,0.0455,1.0,2.9372
+CROP_Orange,Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Muskmelon, Humidity_High",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Watermelon, Potassium_High",Phosphorus_Low,0.0455,1.0,2.9372
+"CROP_Banana, Potassium_High",Humidity_Med,0.0436,0.96,2.9091
+CROP_Banana,Humidity_Med,0.0436,0.96,2.9091
+"CROP_Banana, Phosphorus_High",Humidity_Med,0.0436,0.96,2.9091
+"CROP_Rice, Rainfall_High",Humidity_Med,0.0436,0.96,2.9091
+CROP_Rice,Humidity_Med,0.0436,0.96,2.9091
+"CROP_Banana, Nitrogen_High",Humidity_Med,0.0436,0.96,2.9091
+"CROP_Rice, Potassium_Med",Humidity_Med,0.0409,0.9574,2.9014
+"Humidity_Low, Phosphorus_Low",Potassium_Med,0.0723,0.9138,2.8968
+"CROP_Pomegranate, Phosphorus_Low",Potassium_Med,0.0414,0.91,2.8847
+CROP_Jute,Potassium_Med,0.0414,0.91,2.8847
+"CROP_Pomegranate, Humidity_High",Potassium_Med,0.0414,0.91,2.8847
+CROP_Pomegranate,Potassium_Med,0.0414,0.91,2.8847
+"CROP_Jute, Rainfall_High",Potassium_Med,0.0414,0.91,2.8847
+"Phosphorus_Low, Potassium_High",Rainfall_Low,0.0909,0.9479,2.8723
+"Phosphorus_Low, Potassium_High",Nitrogen_High,0.0918,0.9573,2.8271
+CROP_Jute,Phosphorus_Med,0.0414,0.91,2.8237
+"CROP_Jute, Rainfall_High",Phosphorus_Med,0.0414,0.91,2.8237
+CROP_Orange,Potassium_Low,0.0455,1.0,2.8133
+"CROP_Orange, Phosphorus_Low",Potassium_Low,0.0455,1.0,2.8133
+"CROP_Orange, Humidity_High",Potassium_Low,0.0455,1.0,2.8133
+"Nitrogen_High, Temperature_High",Potassium_High,0.0673,0.925,2.8108
+"Nitrogen_High, Potassium_Low",Phosphorus_Med,0.0609,0.8993,2.7906
+"Nitrogen_Low, Potassium_High",Phosphorus_High,0.0555,0.9385,2.7825
+CROP_Mango,Temperature_High,0.0427,0.94,2.7647
+"CROP_Mango, Humidity_Low",Temperature_High,0.0427,0.94,2.7647
+"CROP_Mango, Potassium_Med",Temperature_High,0.0427,0.94,2.7647
+"CROP_Mango, Rainfall_Med",Temperature_High,0.0427,0.94,2.7647
+CROP_MothBeans,Phosphorus_Med,0.0405,0.89,2.7616
+"CROP_MothBeans, Humidity_Low",Phosphorus_Med,0.0405,0.89,2.7616
+CROP_Maize,Phosphorus_Med,0.0405,0.89,2.7616
+"CROP_Apple, Phosphorus_High",Temperature_Low,0.0414,0.91,2.7576
+"CROP_Apple, Potassium_High",Temperature_Low,0.0414,0.91,2.7576
+"CROP_Apple, Humidity_High",Temperature_Low,0.0414,0.91,2.7576
+"CROP_MothBeans, Humidity_Low",Rainfall_Low,0.0414,0.91,2.7576
+CROP_PigeonPeas,Humidity_Low,0.0414,0.91,2.7576
+CROP_MothBeans,Rainfall_Low,0.0414,0.91,2.7576
+CROP_Apple,Temperature_Low,0.0414,0.91,2.7576
+"Humidity_High, Nitrogen_High",Potassium_High,0.0777,0.8906,2.7063
+CROP_KidneyBeans,Temperature_Low,0.0405,0.89,2.697
+"CROP_KidneyBeans, pH_Value_Low",Temperature_Low,0.0405,0.89,2.697
+"CROP_KidneyBeans, Humidity_Low",Temperature_Low,0.0405,0.89,2.697
+"CROP_Mango, Potassium_Med",Phosphorus_Low,0.0414,0.91,2.6729
+"CROP_Mango, Rainfall_Med",Phosphorus_Low,0.0414,0.91,2.6729
+CROP_Mango,Phosphorus_Low,0.0414,0.91,2.6729
+"CROP_Mango, Humidity_Low",Phosphorus_Low,0.0414,0.91,2.6729
+"Nitrogen_High, Phosphorus_High",Humidity_Med,0.0436,0.8807,2.6689
+"Nitrogen_High, Potassium_Med",Rainfall_High,0.1114,0.9041,2.659
+"Humidity_Med, Phosphorus_Low",Nitrogen_High,0.0445,0.8991,2.655
+"Nitrogen_High, Rainfall_High",Potassium_Med,0.1114,0.8305,2.6327
+"Phosphorus_Low, Rainfall_Low",Nitrogen_High,0.0941,0.8884,2.6235
+"Phosphorus_Low, Rainfall_Low",Potassium_High,0.0909,0.8584,2.6083
+"CROP_Muskmelon, Phosphorus_Low",Temperature_High,0.04,0.88,2.5882
+"CROP_Muskmelon, Nitrogen_High",Temperature_High,0.04,0.88,2.5882
+"CROP_Muskmelon, Humidity_High",Temperature_High,0.04,0.88,2.5882
+"CROP_Muskmelon, Potassium_High",Temperature_High,0.04,0.88,2.5882
+CROP_Muskmelon,Temperature_High,0.04,0.88,2.5882
+"CROP_Muskmelon, Rainfall_Low",Temperature_High,0.04,0.88,2.5882
+"Humidity_High, Potassium_Med",Phosphorus_Low,0.0891,0.875,2.5701
+"Potassium_Low, pH_Value_Low",Humidity_Low,0.0891,0.8448,2.5601
+"Potassium_High, Temperature_Low",Phosphorus_High,0.1009,0.8605,2.5512
+"Rainfall_High, Temperature_Med",Potassium_Med,0.1123,0.8046,2.5505
+"Nitrogen_High, Rainfall_Med",Humidity_Med,0.0777,0.8382,2.5401
+"Potassium_High, Rainfall_Med",Phosphorus_High,0.0995,0.8555,2.5364
+"CROP_Lentil, Rainfall_Low",Potassium_Low,0.0409,0.9,2.532
+CROP_Lentil,Potassium_Low,0.0409,0.9,2.532
+"Phosphorus_Low, Rainfall_High",Potassium_Med,0.1023,0.7979,2.5293
+"Nitrogen_High, Rainfall_Low",Potassium_High,0.0923,0.8252,2.5075
+"Nitrogen_High, Temperature_Low",Phosphorus_Med,0.0609,0.8072,2.5048
+"Humidity_High, Nitrogen_High",Rainfall_Low,0.0714,0.8177,2.4779
+"Humidity_Med, Rainfall_High",Potassium_Med,0.0827,0.7811,2.4762
+CROP_Maize,Potassium_Low,0.04,0.88,2.4757
+"Nitrogen_High, Rainfall_Low",Phosphorus_Low,0.0941,0.8415,2.4716
+"Phosphorus_Low, pH_Value_Low",Potassium_Med,0.0768,0.7788,2.4688
+"Potassium_High, pH_Value_Low",Phosphorus_High,0.0909,0.8299,2.4605
+"Humidity_Med, Nitrogen_Low",Rainfall_Low,0.0486,0.8106,2.4564
+"Humidity_Med, Potassium_Med",Rainfall_High,0.0827,0.8311,2.4443
+"Potassium_High, Temperature_Med",Nitrogen_High,0.08,0.8263,2.4401
+"Humidity_Med, Potassium_Med",Phosphorus_Med,0.0777,0.7808,2.4229
+"Potassium_Med, Temperature_Med",Rainfall_High,0.1123,0.8233,2.4216
+"Potassium_Med, Rainfall_Med",Phosphorus_Low,0.0759,0.8186,2.4045
+"Humidity_High, Nitrogen_High",Phosphorus_Low,0.0714,0.8177,2.4018
+"Humidity_Med, Rainfall_High",Nitrogen_High,0.0859,0.8112,2.3954
+"Nitrogen_High, Phosphorus_Med",Humidity_Med,0.1109,0.7846,2.3775
+"Nitrogen_High, Potassium_Low",Humidity_Med,0.0523,0.7718,2.3388
+"Nitrogen_High, Potassium_Low",Rainfall_Med,0.0518,0.7651,2.3185
+"Humidity_Med, Temperature_Med",Nitrogen_High,0.1218,0.7813,2.3073
+"Phosphorus_Low, Temperature_Low",Humidity_High,0.0577,0.784,2.3057
+"Phosphorus_High, Rainfall_Med",Potassium_High,0.0995,0.75,2.279
+"Humidity_Med, Potassium_Med",Nitrogen_High,0.0768,0.7717,2.2788
+"Phosphorus_Med, Rainfall_High",Potassium_Med,0.0841,0.7171,2.2731
+"Humidity_Med, Potassium_High",Phosphorus_High,0.0891,0.7656,2.27
+"Phosphorus_Low, Potassium_Low",Humidity_High,0.0491,0.7714,2.2689
+"Nitrogen_Low, Phosphorus_Med",Rainfall_Low,0.055,0.7469,2.2634
+"Phosphorus_Low, Rainfall_Med",Potassium_Med,0.0759,0.7137,2.2624
+"Phosphorus_Low, Potassium_High",Humidity_High,0.0736,0.7678,2.2582
+"Phosphorus_Med, Rainfall_Low",Potassium_Low,0.0914,0.8008,2.2529
+"Nitrogen_Low, Potassium_Med",Phosphorus_Low,0.0836,0.7667,2.2519
+"Humidity_High, Temperature_Med",Phosphorus_Low,0.0745,0.7558,2.2199
+"Nitrogen_Low, Potassium_High",Temperature_Low,0.0432,0.7308,2.2145
+"Humidity_High, Rainfall_Low",Potassium_High,0.0773,0.7265,2.2076
+"Phosphorus_High, pH_Value_Med",Potassium_High,0.0673,0.7255,2.2045
+"Nitrogen_High, Temperature_Low",Humidity_Med,0.0545,0.7229,2.1906
+"Nitrogen_Low, Phosphorus_Med",Potassium_Low,0.0573,0.7778,2.1881
+"Humidity_Med, Rainfall_Med",Nitrogen_High,0.0777,0.7403,2.186
+"Nitrogen_Med, Phosphorus_Low",Potassium_Med,0.0482,0.6883,2.182
+"Phosphorus_High, Potassium_Low",Humidity_Low,0.09,0.72,2.1818
+"Potassium_High, Rainfall_High",Humidity_High,0.0573,0.7412,2.1799
+"Humidity_Med, Temperature_High",Phosphorus_High,0.0586,0.733,2.1732
+"Humidity_Low, Rainfall_Low",Potassium_Low,0.0805,0.7696,2.165
+"Nitrogen_Low, Phosphorus_Low",Potassium_Med,0.0836,0.6815,2.1603
+"Potassium_Med, Temperature_High",Phosphorus_Low,0.0673,0.7327,2.152
+"Phosphorus_Med, Potassium_Med",Rainfall_High,0.0841,0.7312,2.1507
+"Nitrogen_Low, Phosphorus_Low",Humidity_High,0.0895,0.7296,2.146
+"Humidity_Med, Phosphorus_High",Potassium_High,0.0891,0.705,2.1424
+"Nitrogen_Med, Phosphorus_Low",Humidity_High,0.0509,0.7273,2.139
+"Nitrogen_Med, Potassium_High",Phosphorus_High,0.0877,0.7175,2.1273
+"Humidity_Med, Phosphorus_Med",Nitrogen_High,0.1109,0.7198,2.1255
+"Humidity_Med, Rainfall_High",Phosphorus_Med,0.0714,0.6738,2.0908
+"Humidity_Med, Nitrogen_Low",Phosphorus_High,0.0423,0.7045,2.0889
+"Potassium_Low, Rainfall_High",Nitrogen_Low,0.0473,0.6887,2.0785
+"Phosphorus_Med, Temperature_High",Rainfall_Low,0.0664,0.6822,2.0674
+"Potassium_High, Rainfall_High",Phosphorus_High,0.0536,0.6941,2.058
+"Nitrogen_High, pH_Value_Low",Humidity_Med,0.0564,0.6776,2.0533
+"Phosphorus_Med, Potassium_Med",Humidity_Med,0.0777,0.6759,2.0481
+"Potassium_Med, pH_Value_Med",Rainfall_High,0.0627,0.6935,2.0396
+"Phosphorus_Low, pH_Value_Med",Humidity_High,0.0941,0.6923,2.0362
+"Humidity_High, Potassium_Low",Phosphorus_Low,0.0491,0.6923,2.0335
+"Phosphorus_Low, Rainfall_Low",Humidity_High,0.0732,0.691,2.0323
+"Humidity_High, Nitrogen_Low",Phosphorus_Low,0.0895,0.6888,2.0232
+"Humidity_High, Rainfall_Low",Phosphorus_Low,0.0732,0.688,2.0209
+"Nitrogen_Low, Rainfall_Low",Potassium_Low,0.0818,0.7171,2.0175
+"Rainfall_High, pH_Value_High",Potassium_Med,0.0673,0.6352,2.0136
+"Nitrogen_Low, pH_Value_High",Potassium_Low,0.0686,0.7156,2.0133
+"Potassium_High, Rainfall_Low",Nitrogen_High,0.0923,0.6812,2.0116
+"Temperature_Med, pH_Value_Med",Nitrogen_High,0.0805,0.6782,2.0026
+"Phosphorus_High, pH_Value_High",Nitrogen_Med,0.06,0.6567,1.99
+"Humidity_High, Rainfall_Low",Nitrogen_High,0.0714,0.6709,1.9813
+"Humidity_High, Phosphorus_Med",Temperature_High,0.04,0.6718,1.9758
+"Potassium_High, Rainfall_Low",Phosphorus_Low,0.0909,0.6711,1.9713
+"Phosphorus_Med, Rainfall_Med",Potassium_Low,0.0636,0.7,1.9693
+"Phosphorus_High, Rainfall_High",pH_Value_Low,0.0614,0.649,1.9668
+"Phosphorus_High, Temperature_Low",Potassium_High,0.1009,0.6472,1.9667
+"Potassium_Med, Temperature_High",Humidity_Low,0.0595,0.6485,1.9652
+"Potassium_High, Temperature_High",Humidity_High,0.0768,0.668,1.9647
+"Potassium_Med, pH_Value_Low",Phosphorus_Low,0.0768,0.668,1.962
+"Phosphorus_Med, Temperature_Med",Humidity_Med,0.0805,0.646,1.9575
+"Potassium_Low, Temperature_High",Rainfall_Low,0.0859,0.6451,1.9547
+"Humidity_High, Rainfall_Med",Temperature_Low,0.0568,0.6443,1.9525
+"Nitrogen_Med, Rainfall_High",Humidity_High,0.0705,0.6624,1.9482
+"Potassium_High, pH_Value_High",Nitrogen_Med,0.0495,0.6412,1.943
+"Nitrogen_High, Rainfall_High",Humidity_Med,0.0859,0.6407,1.9414
+"Humidity_Med, Potassium_Low",Phosphorus_Med,0.0714,0.6255,1.9409
+"Nitrogen_High, Temperature_Med",Humidity_Med,0.1218,0.6396,1.9382
+"Nitrogen_High, pH_Value_High",Temperature_Med,0.07,0.639,1.9364
+"Rainfall_High, pH_Value_Med",Potassium_Med,0.0627,0.6106,1.9357
+"Nitrogen_High, Rainfall_High",Temperature_Med,0.0855,0.6373,1.9312
+"Nitrogen_High, Phosphorus_Low",Rainfall_Low,0.0941,0.6369,1.9301
+"Humidity_High, Rainfall_Low",Temperature_High,0.0695,0.6538,1.9231
+"Humidity_High, Rainfall_Med",Phosphorus_Low,0.0577,0.6546,1.9228
+"Humidity_Med, pH_Value_Low",Potassium_High,0.0586,0.6324,1.9215
+"Humidity_High, Nitrogen_High",pH_Value_Med,0.055,0.6302,1.9097
+"Phosphorus_Low, Rainfall_Med",Nitrogen_Low,0.0673,0.6325,1.9087
+"Humidity_Low, Phosphorus_Med",Potassium_Low,0.0736,0.6778,1.9069
+"Humidity_High, Rainfall_Low",pH_Value_Med,0.0668,0.6282,1.9037
+"Potassium_High, Temperature_Low",Nitrogen_Med,0.0736,0.6279,1.9027
+"Phosphorus_Med, Potassium_Med",Nitrogen_High,0.0741,0.6443,1.9025
+"Rainfall_Low, pH_Value_High",Potassium_Low,0.0864,0.6762,1.9022
+"Humidity_High, Potassium_Low",Nitrogen_Low,0.0445,0.6282,1.8958
+"Nitrogen_High, Potassium_High",Rainfall_Low,0.0923,0.6246,1.8928
+"Nitrogen_High, Potassium_Med",Humidity_Med,0.0768,0.6236,1.8897
+"Nitrogen_High, Potassium_Med",Temperature_Med,0.0768,0.6236,1.8897
+"Nitrogen_High, Phosphorus_Low",Potassium_High,0.0918,0.6215,1.8887
+"Humidity_High, pH_Value_Med",Phosphorus_Low,0.0941,0.6429,1.8882
+"Humidity_High, Phosphorus_High",Temperature_Low,0.0427,0.6225,1.8864
+"Phosphorus_Low, Temperature_Med",Nitrogen_High,0.0882,0.6382,1.8845
+"Phosphorus_Low, Potassium_High",pH_Value_Med,0.0595,0.6209,1.8814
+"Nitrogen_High, Rainfall_Low",Humidity_High,0.0714,0.6382,1.8771
+"Nitrogen_High, pH_Value_High",Humidity_Med,0.0677,0.6183,1.8735
+"Temperature_Low, pH_Value_Low",Phosphorus_High,0.0841,0.6314,1.8721
+"Humidity_Low, Temperature_Low",Phosphorus_High,0.0832,0.631,1.871
+"Nitrogen_Low, Rainfall_High",Humidity_High,0.0632,0.6347,1.8668
+"Nitrogen_High, Potassium_Med",Phosphorus_Med,0.0741,0.6015,1.8664
+"Humidity_High, Potassium_Med",Rainfall_High,0.0645,0.6339,1.8645
+"Phosphorus_Med, Temperature_Med",Nitrogen_High,0.0786,0.6314,1.8645
+"Humidity_Low, Potassium_Med",Phosphorus_Low,0.0723,0.6335,1.8606
+"Nitrogen_High, Rainfall_Low",pH_Value_Med,0.0686,0.6138,1.8601
+"Humidity_Med, pH_Value_High",Phosphorus_Med,0.07,0.5992,1.8594
+"Phosphorus_Low, Rainfall_High",Humidity_High,0.0809,0.6312,1.8565
+"Humidity_Med, Nitrogen_High",Temperature_Med,0.1218,0.6119,1.8542
+"Potassium_Med, Rainfall_Med",Nitrogen_Low,0.0568,0.6127,1.8492
+"Potassium_Low, Rainfall_High",Humidity_Low,0.0418,0.6093,1.8463
+"Phosphorus_Med, Rainfall_High",Humidity_Med,0.0714,0.6085,1.844
+"Nitrogen_Med, Rainfall_Low",Potassium_Low,0.0682,0.655,1.8428
+"Nitrogen_Med, Temperature_Low",Phosphorus_High,0.0782,0.6209,1.8411
+"Phosphorus_Low, Temperature_Low",Potassium_Med,0.0427,0.5802,1.8394
+"Humidity_Med, pH_Value_Med",Nitrogen_High,0.075,0.6226,1.8387
+"Nitrogen_High, Temperature_High",Humidity_High,0.0455,0.625,1.8382
+"Humidity_Med, Rainfall_High",Temperature_Med,0.0641,0.6052,1.8338
+"Nitrogen_Low, Phosphorus_Med",Temperature_High,0.0459,0.6235,1.8337
+Phosphorus_Low,Humidity_High,0.2118,0.6222,1.8299
+Humidity_High,Phosphorus_Low,0.2118,0.623,1.8299
+"Humidity_High, pH_Value_Low",Phosphorus_Low,0.06,0.6226,1.8289
+"Humidity_Med, Temperature_Low",Phosphorus_Med,0.0555,0.5894,1.8288
+"Nitrogen_High, Potassium_High",Phosphorus_Low,0.0918,0.6215,1.8256
+"Nitrogen_Med, Potassium_High",Temperature_Low,0.0736,0.6022,1.8249
+"Phosphorus_High, pH_Value_High",Humidity_Low,0.055,0.602,1.8242
+"Rainfall_High, Temperature_High",Humidity_High,0.0532,0.619,1.8207
+"Phosphorus_Low, Temperature_High",Humidity_High,0.0795,0.6184,1.8187
+"Humidity_High, Temperature_Low",Nitrogen_Low,0.0627,0.6026,1.8186
+"Nitrogen_High, Temperature_High",Phosphorus_Low,0.045,0.6188,1.8174
+"Humidity_Med, pH_Value_Low",Phosphorus_High,0.0568,0.6127,1.8168
+"Phosphorus_Med, pH_Value_Low",Humidity_Low,0.0468,0.5988,1.8147
+"Rainfall_Med, Temperature_Med",Humidity_Med,0.0455,0.5988,1.8146
+"Phosphorus_Med, Temperature_High",Potassium_Low,0.0627,0.6449,1.8142
+Potassium_Med,Rainfall_High,0.1941,0.6153,1.8096
+Rainfall_High,Potassium_Med,0.1941,0.5709,1.8096
+"Nitrogen_High, Phosphorus_Low",Temperature_Med,0.0882,0.5969,1.8089
+"Rainfall_High, Temperature_Med",Nitrogen_High,0.0855,0.6124,1.8084
+"Potassium_High, Temperature_Med",Rainfall_Low,0.0577,0.5962,1.8068
+"Phosphorus_High, pH_Value_Low",Potassium_High,0.0909,0.5935,1.8034
+"Potassium_Med, pH_Value_Med",Phosphorus_Low,0.0555,0.6131,1.8007
+"Potassium_Med, pH_Value_High",Rainfall_High,0.0673,0.6116,1.7987
+"Humidity_Med, pH_Value_Low",Nitrogen_High,0.0564,0.6078,1.795
+"Nitrogen_High, Rainfall_Med",Phosphorus_Med,0.0536,0.5784,1.7949
+"Potassium_Med, Temperature_High",Nitrogen_Low,0.0545,0.5941,1.7928
+"Nitrogen_Low, Temperature_Low",Phosphorus_High,0.0777,0.6042,1.7915
+"Phosphorus_Med, Temperature_Low",Nitrogen_High,0.0609,0.6063,1.7905
+"Temperature_Low, pH_Value_High",Rainfall_Med,0.0623,0.5905,1.7894
+"Phosphorus_Low, pH_Value_Low",Humidity_High,0.06,0.6083,1.7891
+"Nitrogen_High, pH_Value_High",Potassium_Med,0.0618,0.5643,1.7889
+"Phosphorus_Med, Rainfall_High",Nitrogen_High,0.0709,0.6047,1.7855
+"Nitrogen_Low, Rainfall_High",pH_Value_Low,0.0586,0.589,1.785
+"Phosphorus_Low, Rainfall_Low",pH_Value_Med,0.0623,0.588,1.7818
+Nitrogen_High,Humidity_Med,0.1991,0.5879,1.7816
+Humidity_Med,Nitrogen_High,0.1991,0.6033,1.7816
+"Humidity_Low, Phosphorus_High",Potassium_Low,0.09,0.6326,1.7797
+"Humidity_Low, pH_Value_Low",Potassium_Low,0.0891,0.6323,1.7787
+"Nitrogen_Med, Temperature_Low",Potassium_High,0.0736,0.5848,1.7771
+"Nitrogen_Low, Phosphorus_Med",Humidity_Low,0.0432,0.5864,1.777
+"Humidity_Med, Potassium_High",Nitrogen_High,0.07,0.6016,1.7764
+"Rainfall_Med, pH_Value_High",Temperature_Low,0.0623,0.5855,1.7742
+"Humidity_Low, Phosphorus_High",Temperature_Low,0.0832,0.5847,1.7717
+"Humidity_Low, Nitrogen_Low",pH_Value_Low,0.0823,0.582,1.7636
+"Humidity_Low, pH_Value_Low",Nitrogen_Low,0.0823,0.5839,1.762
+"Temperature_High, pH_Value_Med",Humidity_High,0.0718,0.5985,1.7602
+"Phosphorus_Low, Temperature_Low",Rainfall_Med,0.0427,0.5802,1.7583
+"Humidity_Med, Potassium_Med",Temperature_Med,0.0577,0.5799,1.7573
+"Rainfall_Low, pH_Value_Med",Potassium_High,0.0782,0.5772,1.7539
+"Potassium_Med, Rainfall_High",Temperature_Med,0.1123,0.5785,1.7529
+"Rainfall_Med, Temperature_Med",Nitrogen_High,0.045,0.5928,1.7506
+"Potassium_High, Rainfall_Low",pH_Value_Med,0.0782,0.5772,1.749
+"Temperature_High, pH_Value_High",Potassium_Low,0.0714,0.6206,1.7458
+"Nitrogen_Med, Phosphorus_High",Potassium_High,0.0877,0.5744,1.7454
+"Nitrogen_Low, Phosphorus_High",Temperature_Low,0.0777,0.5758,1.7447
+"Humidity_High, pH_Value_High",Phosphorus_Low,0.0577,0.5935,1.7431
+"Phosphorus_Med, Rainfall_Med",Nitrogen_High,0.0536,0.59,1.7423
+"Humidity_High, Rainfall_Med",Nitrogen_Low,0.0509,0.5773,1.7423
+Potassium_High,Phosphorus_High,0.1927,0.5856,1.7364
+Phosphorus_High,Potassium_High,0.1927,0.5714,1.7364
+"Rainfall_Med, Temperature_High",Humidity_Low,0.0555,0.5728,1.7357
+"Temperature_Med, pH_Value_High",Nitrogen_High,0.07,0.5856,1.7291
+"Humidity_Med, Nitrogen_High",Phosphorus_Med,0.1109,0.5571,1.7286
+"Nitrogen_Med, Rainfall_Med",Humidity_Low,0.0682,0.5703,1.7283
+"Potassium_High, Temperature_High",Nitrogen_High,0.0673,0.585,1.7275
+"Phosphorus_High, Rainfall_High",Potassium_High,0.0536,0.5673,1.7239
+"Temperature_High, pH_Value_Med",Rainfall_Low,0.0682,0.5682,1.7218
+"Potassium_Low, Temperature_Med",Phosphorus_Med,0.0536,0.554,1.719
+"Humidity_Low, Nitrogen_Low",Potassium_Low,0.0864,0.6109,1.7187
+"Nitrogen_High, Temperature_Low",Potassium_Med,0.0409,0.5422,1.7187
+"Potassium_Med, Temperature_Low",Rainfall_High,0.0509,0.5833,1.7157
+"Potassium_Low, pH_Value_High",Rainfall_Low,0.0864,0.5655,1.7136
+"Temperature_High, pH_Value_High",Rainfall_Low,0.065,0.5652,1.7128
+"Humidity_Med, pH_Value_High",Nitrogen_High,0.0677,0.5798,1.7121
+"Humidity_Med, Temperature_Low",Nitrogen_High,0.0545,0.5797,1.7119
+"Humidity_High, Potassium_Med",Nitrogen_Low,0.0577,0.567,1.711
+"Phosphorus_Med, Rainfall_Low",Temperature_High,0.0664,0.5817,1.7108
+"Potassium_Low, Rainfall_Low",Phosphorus_Med,0.0914,0.5507,1.7088
+"Humidity_High, pH_Value_Med",Potassium_High,0.0823,0.5621,1.7081
+"Humidity_Low, Phosphorus_Low",Temperature_High,0.0459,0.5805,1.7072
+"Nitrogen_Med, Rainfall_Med",Temperature_Low,0.0673,0.5627,1.7053
+"Potassium_High, Rainfall_Med",Temperature_Low,0.0655,0.5625,1.7045
+Temperature_Med,Nitrogen_High,0.1905,0.5771,1.7043
+Nitrogen_High,Temperature_Med,0.1905,0.5624,1.7043
+"Nitrogen_Med, Potassium_Low",Humidity_Low,0.07,0.562,1.7032
+"Humidity_High, Temperature_High",Phosphorus_Low,0.0795,0.5795,1.702
+"Nitrogen_Med, Potassium_Med",Phosphorus_Low,0.0482,0.5792,1.7014
+"Potassium_High, pH_Value_Med",Humidity_High,0.0823,0.5783,1.7008
+"Humidity_High, Temperature_High",Potassium_High,0.0768,0.5596,1.7005
+"Nitrogen_Low, pH_Value_Low",Humidity_Low,0.0823,0.5604,1.6981
+"Potassium_Low, pH_Value_Med",Phosphorus_Med,0.0532,0.5467,1.6965
+"Potassium_Med, Rainfall_High",Nitrogen_High,0.1114,0.5738,1.6944
+"Nitrogen_Low, Phosphorus_High",pH_Value_Low,0.0755,0.5589,1.6937
+"Humidity_High, pH_Value_Low",Rainfall_High,0.0555,0.5755,1.6926
+"Humidity_Med, Nitrogen_Med",Phosphorus_High,0.0405,0.5705,1.6915
+"Potassium_High, Temperature_Low",Rainfall_Med,0.0655,0.5581,1.6913
+"Humidity_High, Nitrogen_Med",Rainfall_High,0.0705,0.5741,1.6885
+"Nitrogen_High, Phosphorus_Med",Temperature_Med,0.0786,0.5563,1.6857
+"Rainfall_High, pH_Value_High",Nitrogen_High,0.0605,0.5708,1.6856
+"Nitrogen_High, Temperature_High",Rainfall_Low,0.0405,0.5563,1.6856
+"Phosphorus_Med, pH_Value_Low",Potassium_Low,0.0468,0.5988,1.6847
+Potassium_Med,Phosphorus_Low,0.1809,0.5735,1.6845
+Phosphorus_Low,Potassium_Med,0.1809,0.5314,1.6845
+"Phosphorus_Low, pH_Value_Med",Nitrogen_High,0.0773,0.5686,1.679
+"Potassium_High, Temperature_Med",Humidity_Med,0.0536,0.554,1.6788
+"Nitrogen_Low, Rainfall_Med",Phosphorus_Low,0.0673,0.5714,1.6784
+"Humidity_High, Potassium_Low",pH_Value_High,0.0405,0.5705,1.678
+"Potassium_High, Rainfall_Low",Humidity_High,0.0773,0.5705,1.6779
+"Humidity_Low, Rainfall_High",Potassium_Med,0.0468,0.5282,1.6744
+"Phosphorus_Med, Temperature_Low",Humidity_Med,0.0555,0.552,1.6728
+"Nitrogen_High, pH_Value_Med",Temperature_Med,0.0805,0.5514,1.6709
+"Humidity_Med, Temperature_High",Rainfall_Low,0.0441,0.5511,1.6701
+"Nitrogen_High, Temperature_High",pH_Value_Med,0.04,0.55,1.6667
+"Nitrogen_Low, pH_Value_High",Rainfall_Low,0.0527,0.5498,1.6659
+"Potassium_High, pH_Value_Med",Rainfall_Low,0.0782,0.5495,1.6652
+"Potassium_Med, Temperature_Med",Nitrogen_High,0.0768,0.5633,1.6635
+"Phosphorus_High, pH_Value_Low",Temperature_Low,0.0841,0.549,1.6635
+"Phosphorus_Low, Potassium_Med",Rainfall_High,0.1023,0.5653,1.6627
+"Nitrogen_High, Phosphorus_Med",Potassium_Med,0.0741,0.5241,1.6615
+"Nitrogen_Low, Phosphorus_Low",Rainfall_Med,0.0673,0.5481,1.6611
+"Nitrogen_High, pH_Value_High",Phosphorus_Med,0.0586,0.5353,1.6609
+"Nitrogen_High, pH_Value_Low",Potassium_High,0.0455,0.5464,1.6605
+"Phosphorus_Med, Potassium_Low",Rainfall_Low,0.0914,0.5477,1.6596
+"Potassium_Med, pH_Value_High",Nitrogen_High,0.0618,0.562,1.6595
+"Nitrogen_Med, Potassium_Low",Rainfall_Low,0.0682,0.5474,1.6589
+"Potassium_Low, pH_Value_Low",Temperature_Low,0.0577,0.5474,1.6588
+"Phosphorus_Low, Temperature_High",Potassium_Med,0.0673,0.523,1.6578
+"Phosphorus_High, Potassium_Low",Nitrogen_Low,0.0686,0.5491,1.6571
+"Humidity_Low, Phosphorus_Low",Rainfall_Med,0.0432,0.546,1.6545
+"Humidity_High, Temperature_Low",Rainfall_Med,0.0568,0.5459,1.6541
+"Phosphorus_Low, Potassium_High",Temperature_Med,0.0523,0.545,1.6516
+"Phosphorus_Med, Rainfall_Med",Humidity_Med,0.0495,0.545,1.6515
+"Potassium_Med, Rainfall_Med",Humidity_Low,0.0505,0.5441,1.6488
+"Potassium_Low, Temperature_Low",Humidity_Low,0.0682,0.5435,1.6469
+"Phosphorus_High, pH_Value_High",Rainfall_Low,0.0495,0.5423,1.6433
+"Nitrogen_High, Potassium_High",Temperature_Med,0.08,0.5415,1.641
+"Phosphorus_Med, Potassium_Med",Temperature_Med,0.0623,0.5415,1.6409
+"Nitrogen_High, Rainfall_High",Phosphorus_Med,0.0709,0.5288,1.6409
+"Humidity_Low, Nitrogen_Med",Phosphorus_High,0.0755,0.5533,1.6406
+"Phosphorus_High, Rainfall_Low",Humidity_Med,0.0595,0.5413,1.6404
+"Potassium_Med, pH_Value_Low",Rainfall_High,0.0641,0.5573,1.6392
+"Nitrogen_High, pH_Value_Med",Potassium_High,0.0786,0.5389,1.6377
+"Phosphorus_High, Temperature_Low",pH_Value_Low,0.0841,0.5394,1.6344
+"Humidity_High, Rainfall_High",Phosphorus_Low,0.0809,0.5563,1.6338
+"Potassium_Low, Rainfall_Med",Phosphorus_Med,0.0636,0.5263,1.6331
+"Potassium_High, pH_Value_Med",Nitrogen_High,0.0786,0.5527,1.6322
+"Humidity_Low, Temperature_High",Nitrogen_Low,0.0664,0.5407,1.6319
+"Phosphorus_Med, pH_Value_Med",Humidity_Med,0.0545,0.5381,1.6307
+"Humidity_High, Temperature_Low",Phosphorus_Low,0.0577,0.5546,1.629
+"Temperature_High, pH_Value_High",Nitrogen_Med,0.0618,0.5375,1.6289
+"Phosphorus_Low, Temperature_Med",Potassium_Med,0.0709,0.5132,1.6267
+"Nitrogen_High, Rainfall_Low",Temperature_Med,0.06,0.5366,1.626
+"Nitrogen_High, pH_Value_High",Rainfall_High,0.0605,0.5519,1.6231
+"Potassium_High, pH_Value_Low",Humidity_Med,0.0586,0.5353,1.622
+"Nitrogen_Med, Temperature_Low",Rainfall_Med,0.0673,0.5343,1.6191
+"Nitrogen_Med, Rainfall_Low",Phosphorus_High,0.0568,0.5459,1.6184
+"Humidity_Med, Potassium_Low",Rainfall_Low,0.0609,0.5339,1.6178
+"Phosphorus_High, Temperature_Low",Humidity_Low,0.0832,0.5335,1.6168
+"Nitrogen_High, Potassium_High",pH_Value_Med,0.0786,0.5323,1.6131
+"Phosphorus_High, Rainfall_Med",Temperature_Low,0.0705,0.5308,1.6086
+"Nitrogen_Med, Temperature_Low",Humidity_Low,0.0668,0.5307,1.6081
+"Nitrogen_Med, Potassium_Med",Rainfall_High,0.0455,0.5464,1.6072
+"Humidity_Low, Phosphorus_High",Nitrogen_Med,0.0755,0.5304,1.6071
+"Nitrogen_Low, Potassium_Low",Humidity_Low,0.0864,0.5292,1.6038
+"Phosphorus_Low, pH_Value_High",Humidity_High,0.0577,0.5451,1.6031
+"Humidity_Med, Temperature_Med",Phosphorus_Med,0.0805,0.516,1.6012
+"Potassium_Low, pH_Value_Med",Rainfall_Low,0.0514,0.528,1.6001
+"Humidity_Med, Phosphorus_Med",Potassium_Med,0.0777,0.5044,1.599
+"Phosphorus_Low, Rainfall_Med",Humidity_High,0.0577,0.5427,1.5963
+"Phosphorus_High, Rainfall_Low",Potassium_Low,0.0623,0.5661,1.5927
+"Nitrogen_Low, Potassium_Med",pH_Value_Low,0.0573,0.525,1.5909
+"Phosphorus_Low, Temperature_Med",Humidity_High,0.0745,0.5395,1.5867
+"Phosphorus_Low, Rainfall_Low",Temperature_Med,0.0555,0.5236,1.5867
+"Phosphorus_High, Potassium_High",Temperature_Low,0.1009,0.5236,1.5866
+"Potassium_High, Temperature_Med",Phosphorus_Low,0.0523,0.5399,1.5858
+"Humidity_High, Temperature_High",pH_Value_Med,0.0718,0.5232,1.5854
+"Nitrogen_High, Phosphorus_Low",pH_Value_Med,0.0773,0.5231,1.5851
+"Phosphorus_Med, Temperature_Med",Potassium_Med,0.0623,0.5,1.585
+"Humidity_Low, Potassium_Low",pH_Value_Low,0.0891,0.5227,1.5838
+"Humidity_Med, Phosphorus_Med",Temperature_Med,0.0805,0.5221,1.5822
+"Nitrogen_Low, Rainfall_Low",Temperature_High,0.0614,0.5378,1.5819
+"Nitrogen_Low, Potassium_Med",Rainfall_Med,0.0568,0.5208,1.5783
+"Potassium_Low, Temperature_High",pH_Value_High,0.0714,0.5358,1.576
+"Rainfall_High, pH_Value_Med",Humidity_High,0.055,0.5354,1.5747
+"Potassium_Low, pH_Value_Low",Nitrogen_Low,0.055,0.5216,1.574
+"Nitrogen_High, Rainfall_Med",Potassium_Low,0.0518,0.5588,1.5721
+"Nitrogen_Med, Rainfall_Low",Temperature_High,0.0555,0.5328,1.5669
+"Humidity_Low, Potassium_Low",Phosphorus_High,0.09,0.528,1.5655
+"Phosphorus_High, Rainfall_Low",Nitrogen_Med,0.0568,0.5165,1.5652
+"Phosphorus_High, Potassium_High",Rainfall_Med,0.0995,0.5165,1.5652
+"Nitrogen_High, pH_Value_Med",Humidity_Med,0.075,0.514,1.5576
+"Phosphorus_High, Temperature_High",Humidity_Med,0.0586,0.5139,1.5574
+"Potassium_High, Temperature_High",pH_Value_Med,0.0591,0.5138,1.5571
+"Humidity_Low, Temperature_Low",Rainfall_Med,0.0677,0.5138,1.5569
+"Nitrogen_Low, Potassium_Med",Humidity_High,0.0577,0.5292,1.5564
+"Humidity_Med, pH_Value_High",Temperature_Med,0.06,0.5136,1.5564
+"Nitrogen_Low, Rainfall_Med",Temperature_Low,0.0605,0.5135,1.5561
+"Nitrogen_High, pH_Value_Med",Phosphorus_Low,0.0773,0.5296,1.5556
+"Potassium_Low, Temperature_High",Nitrogen_Low,0.0686,0.5154,1.5553
+"Humidity_Low, Rainfall_High",pH_Value_Low,0.0455,0.5128,1.554
+"Nitrogen_Med, Phosphorus_High",Temperature_Low,0.0782,0.5119,1.5512
+"Phosphorus_Med, Rainfall_High",Temperature_Med,0.06,0.5116,1.5504
+"Humidity_High, pH_Value_Low",Potassium_High,0.0491,0.5094,1.548
+"Potassium_Med, Rainfall_High",Phosphorus_Low,0.1023,0.5269,1.5477
+"Nitrogen_High, Potassium_High",Humidity_High,0.0777,0.5262,1.5475
+"Humidity_Low, Rainfall_Low",pH_Value_High,0.055,0.5261,1.5473
+"Rainfall_Low, Temperature_Med",Nitrogen_High,0.06,0.5238,1.5468
+"Phosphorus_Med, Temperature_High",Nitrogen_Med,0.0495,0.5093,1.5435
+"Rainfall_Low, Temperature_High",Potassium_Low,0.0859,0.5462,1.5367
+"Humidity_Low, Temperature_Low",Nitrogen_Med,0.0668,0.5069,1.5361
+"Humidity_High, Temperature_High",Rainfall_Low,0.0695,0.5066,1.5352
+"Humidity_Low, Potassium_Med",Temperature_High,0.0595,0.5219,1.535
+"Temperature_High, pH_Value_Low",Humidity_Low,0.0532,0.5065,1.5348
+"Temperature_Med, pH_Value_Med",Humidity_Med,0.06,0.5057,1.5326
+"Humidity_High, Nitrogen_High",Temperature_High,0.0455,0.5208,1.5319
+"Rainfall_Low, Temperature_Med",Potassium_High,0.0577,0.504,1.5314
+"Potassium_Low, Rainfall_Low",pH_Value_High,0.0864,0.5205,1.531
+"Humidity_High, Nitrogen_Med",Potassium_High,0.0618,0.5037,1.5306
+"Humidity_Low, Potassium_Low",Nitrogen_Low,0.0864,0.5067,1.529
+"Potassium_Med, Temperature_Med",Phosphorus_Low,0.0709,0.52,1.5274
+"Humidity_Med, Potassium_High",pH_Value_Low,0.0586,0.5039,1.527
+"Nitrogen_Med, Potassium_Low",Temperature_High,0.0645,0.5182,1.5243
+"Nitrogen_Low, pH_Value_Low",Phosphorus_High,0.0755,0.5139,1.5238
+"Potassium_Low, Rainfall_Low",Temperature_High,0.0859,0.5178,1.523
+"Rainfall_High, pH_Value_High",Temperature_Med,0.0532,0.5021,1.5217
+"Nitrogen_Low, Rainfall_Med",pH_Value_Low,0.0591,0.5019,1.521
+"Temperature_Med, pH_Value_High",Humidity_Med,0.06,0.5019,1.5209
+"Phosphorus_High, Temperature_Low",Nitrogen_Med,0.0782,0.5015,1.5196
+"Nitrogen_Low, Potassium_Low",Rainfall_Low,0.0818,0.5014,1.5194
+"Temperature_High, pH_Value_Low",Nitrogen_Low,0.0527,0.5022,1.5154
+"Potassium_Med, Temperature_High",pH_Value_Low,0.0459,0.5,1.5152
+"Nitrogen_Low, Temperature_High",Humidity_Low,0.0664,0.5,1.5152
+"Humidity_Low, Nitrogen_Med",Rainfall_Med,0.0682,0.5,1.5152
+"Phosphorus_Low, Rainfall_High",Temperature_Med,0.0641,0.5,1.5152
+"Potassium_Low, pH_Value_Low",Phosphorus_High,0.0536,0.5086,1.508
+"Rainfall_Med, Temperature_Med",Potassium_Low,0.0405,0.5329,1.4993
+"Rainfall_Low, pH_Value_High",Temperature_High,0.065,0.5089,1.4968
+"Rainfall_Low, pH_Value_Med",Nitrogen_High,0.0686,0.5067,1.4963
+Potassium_High,Humidity_High,0.1673,0.5083,1.495
+"Humidity_Med, Potassium_Low",pH_Value_High,0.0577,0.506,1.4882
+"Nitrogen_Med, Potassium_High",Humidity_High,0.0618,0.5056,1.487
+"Phosphorus_High, pH_Value_High",Potassium_Low,0.0482,0.5274,1.4836
+"Phosphorus_Med, pH_Value_Med",Nitrogen_High,0.0509,0.5022,1.4831
+"Humidity_Med, Rainfall_Low",Phosphorus_High,0.0595,0.5,1.4825
+"Rainfall_Low, pH_Value_Med",Temperature_High,0.0682,0.5034,1.4805
+"Nitrogen_Low, pH_Value_Med",Humidity_High,0.0445,0.5026,1.4781
+"Phosphorus_Med, pH_Value_Med",Potassium_Low,0.0532,0.5247,1.476
+"Nitrogen_High, Potassium_Med",pH_Value_High,0.0618,0.5018,1.476
+"Nitrogen_High, Phosphorus_Med",Rainfall_High,0.0709,0.5016,1.4753
+"Nitrogen_Low, Potassium_Med",Temperature_High,0.0545,0.5,1.4706
+Phosphorus_Med,Potassium_Low,0.1668,0.5176,1.4562
+"Humidity_Low, Temperature_Low",Potassium_Low,0.0682,0.5172,1.4552
+"Nitrogen_Low, Temperature_High",Potassium_Low,0.0686,0.5171,1.4548
+Humidity_Low,Potassium_Low,0.1705,0.5165,1.4532
+"Humidity_Low, Temperature_High",Potassium_Low,0.0632,0.5148,1.4483
+"Humidity_Low, Nitrogen_Med",Potassium_Low,0.07,0.5133,1.4442
+"Humidity_Med, Rainfall_Low",Potassium_Low,0.0609,0.5115,1.4389
+"Nitrogen_Low, Phosphorus_High",Potassium_Low,0.0686,0.5084,1.4303
+Rainfall_Low,Potassium_Low,0.1659,0.5028,1.4144
+"Phosphorus_Med, Temperature_Low",Potassium_Low,0.0505,0.5023,1.413

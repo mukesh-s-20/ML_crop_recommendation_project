@@ -1,0 +1,5 @@
+Algorithm,Silhouette,Davies-Bouldin,Calinski-Harabasz,Clusters Found
+K-Means,0.3732,1.0511,603.22,22
+DBSCAN,0.2949,1.0546,380.54,25
+Hierarchical,0.3597,1.1285,563.76,22
+Apriori-Cluster,-0.3302,1.94,34.99,22

@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+{% block title %}AgroMind – Dashboard{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1 class="page-title">📊 Model Performance Dashboard</h1>
+  <p class="page-sub">Comparison of all ML models, clustering algorithms, and deep learning results</p>
+</section>
+
+<!-- BEST MODEL BANNER -->
+<section class="section">
+  <div class="best-model-banner">
+    <div class="bm-left">
+      <span class="bm-icon">🏆</span>
+      <div>
+        <p class="bm-label">Best Classification Model</p>
+        <h2 class="bm-name">{{ best_model.name }}</h2>
+      </div>
+    </div>
+    <div class="bm-right">
+      <div class="bm-stat">
+        <span class="bm-stat-val">{{ best_model.accuracy }}%</span>
+        <span class="bm-stat-lbl">Test Accuracy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLASSIFICATION RESULTS -->
+<section class="section">
+  <h2 class="section-title">Classification Model Comparison</h2>
+
+  <!-- Metrics Table -->
+  <div class="table-card">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Model</th>
+          <th>Accuracy (%)</th>
+          <th>Precision (%)</th>
+          <th>Recall (%)</th>
+          <th>F1-Score (%)</th>
+          <th>CV Accuracy (%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in clf_data %}
+        <tr class="{% if loop.first %}row-best{% endif %}">
+          <td><strong>{% if loop.first %}🏆 {% endif %}{{ row.Model }}</strong></td>
+          <td>
+            <div class="bar-cell">
+              <div class="bar-fill" style="width:{{ row.Accuracy }}%"></div>
+              <span>{{ row.Accuracy }}</span>
+            </div>
+          </td>
+          <td>{{ row.Precision }}</td>
+          <td>{{ row.Recall }}</td>
+          <td>{{ row['F1-Score'] }}</td>
+          <td>{{ row['CV Accuracy'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Chart Images -->
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h4>Accuracy Comparison</h4>
+      <img src="/results/05_accuracy_comparison.png" alt="Accuracy Comparison" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Multi-Metric Comparison</h4>
+      <img src="/results/06_multi_metric_comparison.png" alt="Multi-Metric" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Radar Chart</h4>
+      <img src="/results/07_radar_chart.png" alt="Radar Chart" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>CV vs Test Accuracy</h4>
+      <img src="/results/08_cv_vs_test_accuracy.png" alt="CV vs Test" class="chart-img"/>
+    </div>
+  </div>
+
+  <!-- Confusion Matrices -->
+  <h3 class="sub-title">Confusion Matrices</h3>
+  <div class="cm-grid">
+    {% set model_files = [
+      ("Decision_Tree","Decision Tree"),
+      ("Random_Forest","Random Forest"),
+      ("KNearestNeighbors","K-Nearest Neighbors"),
+      ("NaiveBayes","Naive Bayes"),
+      ("SVM","SVM"),
+      ("LogisticRegression","Logistic Regression")
+    ] %}
+    {% for fname, label in model_files %}
+    <div class="cm-card">
+      <h5>{{ label }}</h5>
+      <img src="/results/cm_{{ fname }}.png" alt="{{ label }} CM" class="cm-img"/>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- CLUSTERING RESULTS -->
+<section class="section">
+  <h2 class="section-title">Unsupervised Clustering Comparison</h2>
+
+  <div class="table-card">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Algorithm</th>
+          <th>Clusters Found</th>
+          <th>Silhouette Score ↑</th>
+          <th>Davies-Bouldin ↓</th>
+          <th>Calinski-Harabasz ↑</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in clust_data %}
+        <tr>
+          <td><strong>{{ row.Algorithm }}</strong></td>
+          <td>{{ row['Clusters Found'] }}</td>
+          <td>{{ row.Silhouette }}</td>
+          <td>{{ row['Davies-Bouldin'] }}</td>
+          <td>{{ row['Calinski-Harabasz'] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h4>K-Means Elbow Curve</h4>
+      <img src="/results/09_kmeans_elbow.png" alt="Elbow" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Silhouette Score Comparison</h4>
+      <img src="/results/15_clustering_comparison.png" alt="Clustering Comparison" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Hierarchical Dendrogram</h4>
+      <img src="/results/13_dendrogram.png" alt="Dendrogram" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Davies-Bouldin Index</h4>
+      <img src="/results/16_davies_bouldin.png" alt="Davies Bouldin" class="chart-img"/>
+    </div>
+  </div>
+
+  <div class="chart-grid four-col">
+    <div class="chart-card">
+      <h4>K-Means Clusters</h4>
+      <img src="/results/10_kmeans_clusters.png" alt="KMeans" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>DBSCAN Clusters</h4>
+      <img src="/results/11_dbscan_clusters.png" alt="DBSCAN" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Hierarchical Clusters</h4>
+      <img src="/results/12_hierarchical_clusters.png" alt="Hierarchical" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Apriori Clusters</h4>
+      <img src="/results/14_apriori_clusters.png" alt="Apriori" class="chart-img"/>
+    </div>
+  </div>
+</section>
+
+<!-- DEEP LEARNING -->
+<section class="section">
+  <h2 class="section-title">Deep Learning – MLP Neural Network</h2>
+
+  <div class="dl-metrics-row">
+    {% for key, val in dl_metrics.items() %}
+    <div class="dl-metric-card">
+      <span class="dl-metric-val">{{ val }}{% if key != 'ROC-AUC' %}%{% endif %}</span>
+      <span class="dl-metric-lbl">{{ key }}</span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="arch-box">
+    <h4>Network Architecture</h4>
+    <div class="arch-layers">
+      <div class="arch-layer input-layer"><span>Input</span><small>7 neurons</small></div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-layer hidden-layer"><span>Dense</span><small>128, ReLU</small></div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-layer hidden-layer"><span>Dense</span><small>64, ReLU</small></div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-layer hidden-layer"><span>Dense</span><small>32, ReLU</small></div>
+      <div class="arch-arrow">→</div>
+      <div class="arch-layer output-layer"><span>Output</span><small>22 classes</small></div>
+    </div>
+    <p class="arch-note">Optimizer: Adam &nbsp;|&nbsp; Regularisation: L2 (α=0.005) &nbsp;|&nbsp; Early Stopping: ON</p>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h4>Training Loss Curve</h4>
+      <img src="/results/17_dl_loss_curve.png" alt="Loss Curve" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Confusion Matrix</h4>
+      <img src="/results/18_dl_confusion_matrix.png" alt="DL CM" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Per-Class F1 Score</h4>
+      <img src="/results/19_dl_per_class_f1.png" alt="Per Class F1" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Overall Metrics</h4>
+      <img src="/results/20_dl_metrics_bar.png" alt="DL Metrics" class="chart-img"/>
+    </div>
+  </div>
+</section>
+
+<!-- ASSOCIATION RULES -->
+<section class="section">
+  <h2 class="section-title">Association Rule Mining – Apriori</h2>
+
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h4>Support vs Confidence (coloured by Lift)</h4>
+      <img src="/results/21_arm_scatter.png" alt="ARM Scatter" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Top 15 Rules by Lift</h4>
+      <img src="/results/22_arm_top_rules_lift.png" alt="Top Rules" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Confidence Distribution</h4>
+      <img src="/results/23_arm_confidence_dist.png" alt="Confidence Dist" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Crop Rules – Support vs Lift</h4>
+      <img src="/results/24_arm_crop_rules.png" alt="Crop Rules" class="chart-img"/>
+    </div>
+  </div>
+</section>
+
+<!-- EDA PLOTS -->
+<section class="section">
+  <h2 class="section-title">Exploratory Data Analysis</h2>
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h4>Class Distribution</h4>
+      <img src="/results/01_class_distribution.png" alt="Class Distribution" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Feature Distributions</h4>
+      <img src="/results/02_feature_distributions.png" alt="Distributions" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Correlation Heatmap</h4>
+      <img src="/results/03_correlation_heatmap.png" alt="Correlation" class="chart-img"/>
+    </div>
+    <div class="chart-card">
+      <h4>Box Plots (After Outlier Capping)</h4>
+      <img src="/results/04_boxplots.png" alt="Boxplots" class="chart-img"/>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

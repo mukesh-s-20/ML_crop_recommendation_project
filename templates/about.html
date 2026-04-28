@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block title %}AgroMind – About{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1 class="page-title">📖 About This Project</h1>
+  <p class="page-sub">AI-Based Crop Recommendation System – Final Year ML Project</p>
+</section>
+
+<section class="section">
+  <div class="about-grid">
+
+    <div class="about-card">
+      <h2>Problem Statement</h2>
+      <p>
+        Farmers in India often rely on traditional knowledge or trial-and-error to decide which crop to grow.
+        Poor crop selection leads to low yields, wasted resources, and financial loss. This project proposes
+        an <strong>AI-based crop recommendation system</strong> that uses soil parameters and climate data
+        to intelligently suggest the most suitable crop for a given field.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h2>Dataset Details</h2>
+      <ul class="about-list">
+        <li>📁 Source: Crop Recommendation Dataset (Excel)</li>
+        <li>📊 Total Samples: 2,200 rows × 8 columns</li>
+        <li>🌾 Target Classes: 22 unique crop types</li>
+        <li>⚖️ Balanced: 100 samples per crop</li>
+        <li>✅ No missing values | 0 duplicates after cleaning</li>
+      </ul>
+      <div class="feat-chips">
+        <span class="chip">Nitrogen</span><span class="chip">Phosphorus</span><span class="chip">Potassium</span>
+        <span class="chip">Temperature</span><span class="chip">Humidity</span><span class="chip">pH Value</span><span class="chip">Rainfall</span>
+      </div>
+    </div>
+
+    <div class="about-card full-width">
+      <h2>Technical Pipeline</h2>
+      <div class="pipeline-grid">
+        <div class="pipeline-step">
+          <div class="ps-num">1</div>
+          <h4>Preprocessing</h4>
+          <p>Duplicate removal, IQR-based outlier capping, StandardScaler normalization, LabelEncoder, 75/25 stratified split</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="ps-num">2</div>
+          <h4>Classification</h4>
+          <p>Decision Tree, Random Forest, KNN, Naive Bayes, SVM, Logistic Regression — with Accuracy, Precision, Recall, F1, CV Score</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="ps-num">3</div>
+          <h4>Clustering</h4>
+          <p>K-Means (Elbow method), DBSCAN (density-based), Hierarchical/Ward (Dendrogram), Apriori-pattern clustering</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="ps-num">4</div>
+          <h4>Deep Learning</h4>
+          <p>3-layer MLP Neural Network (128→64→32), ReLU activation, Adam optimizer, L2 regularisation, Early Stopping, ROC-AUC</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="ps-num">5</div>
+          <h4>Association Rules</h4>
+          <p>Apriori algorithm from scratch: itemset generation, rule extraction, Support/Confidence/Lift evaluation</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="ps-num">6</div>
+          <h4>Web App</h4>
+          <p>Flask REST API with real-time prediction, interactive dashboard, responsive UI with chart gallery</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <h2>Technologies Used</h2>
+      <div class="tech-grid">
+        <div class="tech-item"><span class="tech-icon">🐍</span><span>Python 3.x</span></div>
+        <div class="tech-item"><span class="tech-icon">📦</span><span>scikit-learn</span></div>
+        <div class="tech-item"><span class="tech-icon">📊</span><span>Pandas / NumPy</span></div>
+        <div class="tech-item"><span class="tech-icon">📈</span><span>Matplotlib / Seaborn</span></div>
+        <div class="tech-item"><span class="tech-icon">🌐</span><span>Flask</span></div>
+        <div class="tech-item"><span class="tech-icon">💾</span><span>Joblib</span></div>
+        <div class="tech-item"><span class="tech-icon">🎨</span><span>HTML / CSS / JS</span></div>
+        <div class="tech-item"><span class="tech-icon">📋</span><span>openpyxl</span></div>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <h2>Project Structure</h2>
+      <div class="tree">
+<pre>
+crop_recommendation_project/
+├── data/
+│   ├── Crop_Recommendation.xlsx
+│   ├── X_train.npy, X_test.npy
+│   └── y_train.npy, y_test.npy
+├── models/
+│   ├── best_classifier.pkl
+│   ├── mlp_model.pkl
+│   ├── label_encoder.pkl
+│   └── scaler_std.pkl
+├── results/        ← all plots (PNG)
+├── static/
+│   ├── css/style.css
+│   └── js/main.js, predict.js
+├── templates/
+│   ├── base.html, index.html
+│   ├── predict.html, dashboard.html
+│   └── about.html
+├── 1_preprocessing.py
+├── 2_classification.py
+├── 3_clustering.py
+├── 4_deep_learning.py
+├── 5_association_rules.py
+├── app.py
+├── run_all.py
+└── requirements.txt
+</pre>
+      </div>
+    </div>
+
+    <div class="about-card full-width">
+      <h2>Model Performance Summary</h2>
+      <div class="perf-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Component</th><th>Method</th><th>Key Metric</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Classification (Best)</td><td>Random Forest / SVM</td><td>~78–82% Accuracy</td></tr>
+            <tr><td>Deep Learning</td><td>MLP (128→64→32)</td><td>~76–80% Accuracy</td></tr>
+            <tr><td>Clustering</td><td>K-Means / Hierarchical</td><td>Silhouette ~0.15–0.25</td></tr>
+            <tr><td>Association Rules</td><td>Apriori (scratch)</td><td>Lift up to 3.0+</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

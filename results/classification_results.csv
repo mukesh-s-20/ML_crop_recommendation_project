@@ -1,0 +1,7 @@
+Model,Accuracy,Precision,Recall,F1-Score,CV Accuracy
+Random Forest,86.36,87.31,86.36,85.54,84.36
+Naive Bayes,84.36,84.1,84.36,83.88,82.3
+Decision Tree,84.18,84.48,84.18,82.67,80.0
+SVM,82.18,82.52,82.18,81.34,80.18
+K-Nearest Neighbors,79.82,80.18,79.82,79.39,77.45
+Logistic Regression,74.36,74.52,74.36,73.82,72.36

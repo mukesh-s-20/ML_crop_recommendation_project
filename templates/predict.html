@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block title %}AgroMind – Crop Prediction{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1 class="page-title">🌱 Crop Prediction</h1>
+  <p class="page-sub">Two ways to get started — enter soil values to find the best crop, or choose a crop to see its soil needs</p>
+</section>
+
+<!-- METHOD TABS -->
+<div class="method-tabs-wrap">
+  <div class="method-tabs">
+    <button class="method-tab active" id="tab1" onclick="switchTab(1)">
+      <span class="tab-icon">🧪</span>
+      <div class="tab-text">
+        <strong>Method 1</strong>
+        <span>Enter Soil Values → Find Best Crop</span>
+      </div>
+    </button>
+    <div class="tab-divider">or</div>
+    <button class="method-tab" id="tab2" onclick="switchTab(2)">
+      <span class="tab-icon">🌾</span>
+      <div class="tab-text">
+        <strong>Method 2</strong>
+        <span>Choose Crop → See Soil Requirements</span>
+      </div>
+    </button>
+  </div>
+</div>
+
+<!-- ═══════ METHOD 1 ═══════ -->
+<section class="predict-section" id="method1Panel">
+  <div class="predict-grid">
+    <div class="predict-form-card">
+      <h2 class="card-title">🧪 Soil &amp; Climate Parameters</h2>
+      <p class="card-hint">📌 N, P, K and Temperature drive the classification model. All 7 values improve the Deep Learning result.</p>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>🧪 Nitrogen (N)</label>
+          <div class="input-wrap"><input type="number" id="inp_n" min="0" max="140" step="1" placeholder="0–140" class="form-input"/><span class="input-unit">kg/ha</span></div>
+          <input type="range" id="sl_n" min="0" max="140" step="1" value="50" class="slider"/>
+        </div>
+        <div class="form-group">
+          <label>🧪 Phosphorus (P)</label>
+          <div class="input-wrap"><input type="number" id="inp_p" min="5" max="145" step="1" placeholder="5–145" class="form-input"/><span class="input-unit">kg/ha</span></div>
+          <input type="range" id="sl_p" min="5" max="145" step="1" value="50" class="slider"/>
+        </div>
+        <div class="form-group">
+          <label>🧪 Potassium (K)</label>
+          <div class="input-wrap"><input type="number" id="inp_k" min="5" max="205" step="1" placeholder="5–205" class="form-input"/><span class="input-unit">kg/ha</span></div>
+          <input type="range" id="sl_k" min="5" max="205" step="1" value="50" class="slider"/>
+        </div>
+        <div class="form-group">
+          <label>🌡️ Temperature</label>
+          <div class="input-wrap"><input type="number" id="inp_t" min="8" max="44" step="0.1" placeholder="8–44" class="form-input"/><span class="input-unit">°C</span></div>
+          <input type="range" id="sl_t" min="8" max="44" step="0.1" value="25" class="slider"/>
+        </div>
+        <div class="form-group">
+          <label>💧 Humidity</label>
+          <div class="input-wrap"><input type="number" id="inp_h" min="14" max="100" step="0.1" placeholder="14–100" class="form-input"/><span class="input-unit">%</span></div>
+          <input type="range" id="sl_h" min="14" max="100" step="0.1" value="65" class="slider"/>
+        </div>
+        <div class="form-group">
+          <label>⚗️ pH Value</label>
+          <div class="input-wrap"><input type="number" id="inp_ph" min="3.5" max="9.9" step="0.1" placeholder="3.5–9.9" class="form-input"/><span class="input-unit">pH</span></div>
+          <input type="range" id="sl_ph" min="3.5" max="9.9" step="0.1" value="6.5" class="slider"/>
+        </div>
+        <div class="form-group full-width">
+          <label>🌧️ Rainfall</label>
+          <div class="input-wrap"><input type="number" id="inp_r" min="20" max="300" step="1" placeholder="20–300" class="form-input"/><span class="input-unit">mm</span></div>
+          <input type="range" id="sl_r" min="20" max="300" step="1" value="100" class="slider"/>
+        </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-primary btn-lg" id="predictBtn" onclick="runPrediction()">✨ Predict Crop</button>
+        <button class="btn btn-outline" onclick="fillExample()">Load Example</button>
+        <button class="btn btn-ghost" onclick="clearForm()">Clear</button>
+      </div>
+    </div>
+
+    <!-- Result Panel -->
+    <div class="result-panel" id="resultPanel">
+      <div class="result-placeholder" id="resultPlaceholder">
+        <span class="result-ph-icon">🌾</span>
+        <p>Your crop recommendation will appear here after prediction.</p>
+      </div>
+      <div class="result-content" id="resultContent" style="display:none">
+        <div class="result-top">
+          <span class="result-emoji" id="reEmoji">🌾</span>
+          <div>
+            <p class="result-label">Recommended Crop</p>
+            <h2 class="result-crop" id="reCrop">—</h2>
+            <div class="result-badges">
+              <span class="badge badge-green" id="reConf">—% Confidence</span>
+              <span class="badge badge-blue" id="reModel">—</span>
+            </div>
+          </div>
+        </div>
+        <div class="result-info" id="reInfo"></div>
+        <div class="result-section">
+          <h4>🧠 Deep Learning (MLP) says:</h4>
+          <div class="mlp-row">
+            <span class="mlp-crop" id="reMlpCrop">—</span>
+            <span class="badge badge-purple" id="reMlpConf">—%</span>
+          </div>
+        </div>
+        <div class="result-section">
+          <h4>🏆 Top 3 Recommendations</h4>
+          <div class="top3-list" id="reTop3"></div>
+        </div>
+        <div class="prob-bar-section">
+          <h4>Confidence Bars</h4>
+          <div id="probBars"></div>
+        </div>
+        <div class="result-section">
+          <button class="btn btn-outline btn-sm" id="viewSoilBtn" style="width:100%;margin-top:.5rem">
+            🔍 View Soil Requirements for this crop →
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sample Table -->
+  <div style="padding:0 0 2rem">
+    <h2 class="section-title" style="font-size:1.3rem;margin:1.5rem 0 1rem">Sample Input Values</h2>
+    <div class="table-card">
+      <table class="data-table">
+        <thead><tr><th>Crop</th><th>N</th><th>P</th><th>K</th><th>Temp</th><th>Humidity</th><th>pH</th><th>Rainfall</th></tr></thead>
+        <tbody>
+          <tr data-example="90,42,43,20.88,82.00,6.50,202.94"><td>🌾 Rice</td><td>90</td><td>42</td><td>43</td><td>20.88</td><td>82</td><td>6.50</td><td>202.94</td></tr>
+          <tr data-example="77,52,17,24.00,80.16,6.50,67.22"><td>🌽 Maize</td><td>77</td><td>52</td><td>17</td><td>24.00</td><td>80</td><td>6.50</td><td>67.22</td></tr>
+          <tr data-example="40,67,19,18.87,16.86,7.51,73.22"><td>🫘 ChickPea</td><td>40</td><td>67</td><td>19</td><td>18.87</td><td>16.86</td><td>7.51</td><td>73.22</td></tr>
+          <tr data-example="100,82,50,27.00,80.00,6.00,104.00"><td>🍌 Banana</td><td>100</td><td>82</td><td>50</td><td>27.00</td><td>80</td><td>6.00</td><td>104</td></tr>
+          <tr data-example="133,47,24,24.40,70.00,6.50,80.00"><td>☁️ Cotton</td><td>133</td><td>47</td><td>24</td><td>24.40</td><td>70</td><td>6.50</td><td>80</td></tr>
+          <tr data-example="91,21,26,26.30,80.00,6.50,100.00"><td>☕ Coffee</td><td>91</td><td>21</td><td>26</td><td>26.30</td><td>80</td><td>6.50</td><td>100</td></tr>
+        </tbody>
+      </table>
+      <p class="table-hint">💡 Click any row to auto-fill the form</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ METHOD 2 ═══════ -->
+<section class="predict-section" id="method2Panel" style="display:none">
+  <div class="method2-layout">
+
+    <!-- Crop Selector -->
+    <div class="crop-selector-card">
+      <h2 class="card-title">🌾 Select a Crop</h2>
+      <p class="card-hint">Choose the crop you plan to grow to see the ideal soil and climate conditions derived from our dataset.</p>
+      <div class="crop-search-wrap">
+        <input type="text" id="cropSearchInput" placeholder="🔍 Search crops..." class="crop-search-input" oninput="filterCrops(this.value)"/>
+      </div>
+      <div class="crop-picker-grid" id="cropPickerGrid">
+        {% set crops_emoji = [
+          ("Apple","🍎"),("Banana","🍌"),("Blackgram","🫘"),("ChickPea","🫘"),
+          ("Coconut","🥥"),("Coffee","☕"),("Cotton","☁️"),("Grapes","🍇"),
+          ("Jute","🌿"),("KidneyBeans","🫘"),("Lentil","🫘"),("Maize","🌽"),
+          ("Mango","🥭"),("MothBeans","🌱"),("MungBean","🫘"),("Muskmelon","🍈"),
+          ("Orange","🍊"),("Papaya","🍈"),("PigeonPeas","🌿"),("Pomegranate","🍎"),
+          ("Rice","🌾"),("Watermelon","🍉")
+        ] %}
+        {% for crop, emoji in crops_emoji %}
+        <button class="crop-pick-btn" data-crop="{{ crop }}" onclick="selectCrop('{{ crop }}','{{ emoji }}')">
+          <span class="cpb-emoji">{{ emoji }}</span>
+          <span class="cpb-name">{{ crop }}</span>
+        </button>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Soil Requirements Panel -->
+    <div class="soil-req-card" id="soilReqCard">
+      <div class="soil-placeholder" id="soilPlaceholder">
+        <span style="font-size:3.5rem;display:block;margin-bottom:1rem">👈</span>
+        <p style="color:var(--text-muted);font-size:.95rem">Select a crop from the list to view its ideal soil and climate conditions.</p>
+      </div>
+      <div id="soilReqContent" style="display:none">
+        <div class="soil-crop-header">
+          <span class="soil-crop-emoji" id="soilEmoji">🌾</span>
+          <div>
+            <h2 class="soil-crop-name" id="soilCropName">—</h2>
+            <p class="soil-crop-desc" id="soilCropDesc">—</p>
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.4rem">
+              <span class="badge badge-green" id="soilSeason">—</span>
+              <span class="badge badge-blue" id="soilWater">—</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parameter Cards -->
+        <div class="soil-params-grid" id="soilParamsGrid"></div>
+
+        <!-- Summary table -->
+        <div class="soil-summary-box">
+          <h4>📋 Quick Reference Table</h4>
+          <div class="table-card" style="margin-top:.8rem">
+            <table class="data-table" id="soilRefTable">
+              <thead><tr><th>Parameter</th><th>Min</th><th>Ideal Low (Q1)</th><th>Mean</th><th>Ideal High (Q3)</th><th>Max</th><th>Unit</th></tr></thead>
+              <tbody id="soilRefBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="soil-tip-box">
+          <h4>💡 How to Read These Values</h4>
+          <div class="tip-legend">
+            <span class="tip-item"><span class="tip-dot green"></span> <strong>Ideal range (Q1–Q3)</strong> — target this band for best yield</span>
+            <span class="tip-item"><span class="tip-dot amber"></span> <strong>Acceptable range (Min–Max)</strong> — crop can tolerate these limits</span>
+            <span class="tip-item"><span class="tip-dot blue"></span> <strong>Mean</strong> — average observed value in dataset</span>
+          </div>
+        </div>
+
+        <div class="soil-action-row">
+          <button class="btn btn-primary" onclick="prefillFromCrop()">📋 Pre-fill Method 1 with ideal values</button>
+          <button class="btn btn-ghost" onclick="switchTab(1)">← Back to Prediction</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="/static/js/predict.js"></script>
+<script src="/static/js/crop_requirements.js"></script>
+{% endblock %}

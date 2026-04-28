@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block title %}AgroMind – Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-tag">AI-Powered Agriculture</span>
+    <h1 class="hero-title">
+      Know What to<br/>
+      <em>Grow</em>
+    </h1>
+    <p class="hero-sub">
+      Enter your soil parameters and get instant AI-powered crop recommendations.<br/>
+      Built with Machine Learning, Deep Learning &amp; Association Rule Mining.
+    </p>
+    <div class="hero-btns">
+      <a href="/predict" class="btn btn-primary">🌱 Get Recommendation</a>
+      <a href="/dashboard" class="btn btn-outline">📊 View Model Stats</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card" id="heroCard">
+      <div class="hc-row"><span class="hc-label">Nitrogen</span><span class="hc-val" id="hcN">—</span></div>
+      <div class="hc-row"><span class="hc-label">Phosphorus</span><span class="hc-val" id="hcP">—</span></div>
+      <div class="hc-row"><span class="hc-label">Potassium</span><span class="hc-val" id="hcK">—</span></div>
+      <div class="hc-divider"></div>
+      <div class="hc-result" id="hcResult">
+        <span class="hc-crop-emoji">🌾</span>
+        <span class="hc-crop-name">Enter values →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<section class="stats-strip">
+  <div class="stat-item">
+    <span class="stat-num">22</span>
+    <span class="stat-lbl">Crop Types</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">2,200</span>
+    <span class="stat-lbl">Training Samples</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">6</span>
+    <span class="stat-lbl">ML Classifiers</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">3</span>
+    <span class="stat-lbl">Clustering Algorithms</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">3-Layer</span>
+    <span class="stat-lbl">Deep Neural Net</span>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section features-section">
+  <h2 class="section-title">What This System Does</h2>
+  <div class="features-grid">
+    <div class="feat-card">
+      <div class="feat-icon">🔬</div>
+      <h3>Preprocessing</h3>
+      <p>IQR-based outlier capping, StandardScaler normalization, Label Encoding, and 75/25 stratified split.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🤖</div>
+      <h3>Classification</h3>
+      <p>Decision Tree, Random Forest, KNN, Naive Bayes, SVM, Logistic Regression – all compared side-by-side.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔭</div>
+      <h3>Clustering</h3>
+      <p>K-Means, DBSCAN, Hierarchical (Ward), and Apriori-style pattern clustering for unsupervised insights.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🧠</div>
+      <h3>Deep Learning</h3>
+      <p>3-layer MLP neural network (128→64→32 neurons) with ReLU, Adam optimizer, and L2 regularisation.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🔗</div>
+      <h3>Association Rules</h3>
+      <p>Apriori algorithm from scratch to mine frequent soil-condition ↔ crop patterns with Support, Confidence, Lift.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">🌐</div>
+      <h3>Web Interface</h3>
+      <p>Full-stack Flask web app with real-time prediction, interactive charts, and model comparison dashboard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="section howto-section">
+  <h2 class="section-title">How to Use</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <h4>Enter Soil Data</h4>
+        <p>Input N, P, K levels, temperature, humidity, pH, and rainfall values.</p>
+      </div>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <h4>AI Analysis</h4>
+        <p>Our best classification model and MLP neural network both analyse your inputs.</p>
+      </div>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <h4>Get Results</h4>
+        <p>Receive your top crop recommendation with confidence scores and growing tips.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CROPS PREVIEW -->
+<section class="section crops-section">
+  <h2 class="section-title">22 Crops Covered</h2>
+  <div class="crops-grid">
+    {% set crops = [
+      ("🌾","Rice"),("🌽","Maize"),("🫘","ChickPea"),("🫘","KidneyBeans"),
+      ("🌿","PigeonPeas"),("🌱","MothBeans"),("🫘","MungBean"),("🫘","Blackgram"),
+      ("🫘","Lentil"),("🍎","Pomegranate"),("🍌","Banana"),("🥭","Mango"),
+      ("🍇","Grapes"),("🍉","Watermelon"),("🍈","Muskmelon"),("🍎","Apple"),
+      ("🍊","Orange"),("🍈","Papaya"),("🥥","Coconut"),("☁️","Cotton"),
+      ("🌿","Jute"),("☕","Coffee")
+    ] %}
+    {% for emoji, name in crops %}
+    <div class="crop-chip">
+      <span>{{ emoji }}</span> {{ name }}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
